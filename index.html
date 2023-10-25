@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="myicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <div class="A">
+      <div class="B C">
+        <h1>ToDo List</h1>
+      </div>
+      <div class="B D">
+        <input
+          type="text"
+          id="new-task"
+          class="styled-input"
+          placeholder="Add a todo..."
+        />
+        <input
+          type="date"
+          id="task-date"
+          class="styled-input"
+          placeholder="Select date"
+        />
+        <button id="add-task-button">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <div class="B E">
+        <button id="deleteButton">DELETE ALL</button>
+      </div>
+      <div class="B F">
+        <table>
+          <thead>
+            <tr>
+              <th>TASK</th>
+              <th>DUE DATE</th>
+              <th>STATUS</th>
+              <th>ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody class="todos-list-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="author-text">
+      <img src="myicon.png" alt="logo" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
